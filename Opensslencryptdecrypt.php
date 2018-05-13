@@ -10,10 +10,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  *
  */
 class Opensslencryptdecrypt {
+	
 	public $encrypt_method = "AES-256-CBC";
 	//these are test keys, you can be generate one at https://asecuritysite.com/encryption/keygen
 	public $secret_key = 'EF61FE21EB90047086DED9A5386A8808'; //This is my secret key
+	
 	public $secret_iv = 'F148EB0B9C6A3E5B16A03FCBE949BAE8'; //This is my secret iv
+	
 	public $output = false;
 
 	function encrypt($string) {
