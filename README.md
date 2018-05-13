@@ -15,7 +15,7 @@ load it in your controller
  
   	$encrptopenssl =  New Opensslencryptdecrypt();
   
- 	 $plain_txt = "this is awsome";
+ 	$plain_txt = "this is awsome";
   
 	$testenc = $encrptopenssl->encrypt($plain_txt);  //encypting plain text
   
