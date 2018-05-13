@@ -5,18 +5,18 @@ put this class in your application/libraries folder
 
 load it in your controller
 
-public function __construct() {
+ 	public function __construct() {
       
-      $this -> load -> library('Opensslencryptdecrypt');	
+     		 $this -> load -> library('Opensslencryptdecrypt');	
       
-      }
+     	 }
       
  usage in class function   
  
-  $encrptopenssl =  New Opensslencryptdecrypt();
+  	$encrptopenssl =  New Opensslencryptdecrypt();
   
-  $plain_txt = "this is awsome";
+ 	 $plain_txt = "this is awsome";
   
 	$testenc = $encrptopenssl->encrypt($plain_txt);  //encypting plain text
   
-  $testdec = $encrptopenssl->decrypt($testenc);    //decrypting plain texx
+  	$testdec = $encrptopenssl->decrypt($testenc);    //decrypting plain texx
